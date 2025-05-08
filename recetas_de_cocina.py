@@ -181,11 +181,10 @@ while True:
 
 if eleccion_receta.lower() == "a":
     receta["ensalada_cesar_con_pollo"]["ingredientes"] = str(receta["ensalada_cesar_con_pollo"]["ingredientes"]).replace("(","").replace(")","").replace(",","\n").replace("'","")
-    a = receta["ensalada_cesar_con_pollo"]["ingredientes"]
-    print(f"\nLos ingrecientes que necesitas son:\n {a}\n")
+    print(f"\nLos ingrecientes que necesitas son:\n {receta['ensalada_cesar_con_pollo']['ingredientes']}\n")
 elif eleccion_receta.lower() == "b":
     receta["warp_de_pollo_con_salsa_cesar"]["ingredientes"] = str(receta["warp_de_pollo_con_salsa_cesar"]["ingredientes"]).replace("(","").replace(")","").replace(",","\n").replace("'","")
-    print(f"\nLos ingrecientes que necesitas son:\n {receta['sandwich_clasico_pollo']['ingredientes']}\n")
+    print(f"\nLos ingrecientes que necesitas son:\n {receta['warp_de_pollo_con_salsa_cesar']['ingredientes']}\n")
 elif eleccion_receta.lower() == "c":
     receta["sandwich_clasico_pollo"]["ingredientes"] = str(receta["sandwich_clasico_pollo"]["ingredientes"]).replace("(","").replace(")","").replace(",","\n").replace("'","")
     print(f"\nLos ingrecientes que necesitas son:\n {receta['sandwich_clasico_pollo']['ingredientes']}\n")
